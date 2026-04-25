@@ -117,3 +117,148 @@ button:hover {
   border-top: 1px solid #e4e4e4;
   font-size: 12px;
 }
+
+/* TELEGA CS — САМАЯ ТЁМНАЯ ФИОЛЕТОВАЯ ТЕМА */
+:root {
+    --tg-black: #050508;
+    --tg-black-2: #0A0A12;
+    --tg-black-3: #0F0F1A;
+    --tg-purple: #6B2FBB;
+    --tg-purple-dark: #4A1D8A;
+    --tg-purple-light: #8B5BCF;
+    --tg-text: #E6E6FA;
+    --tg-text-dim: #A0A0C0;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--tg-purple) var(--tg-black-2);
+}
+
+body, .page, .chat-page, .login-page {
+    background: var(--tg-black) !important;
+    background-image: radial-gradient(circle at 10% 20%, rgba(107, 47, 187, 0.05) 0%, transparent 50%) !important;
+    color: var(--tg-text) !important;
+}
+
+.sidebar, .dialogs-page, .left-column, .chat-header, .composer-panel {
+    background: var(--tg-black-2) !important;
+    border-right: 1px solid rgba(107, 47, 187, 0.2) !important;
+    border-bottom: 1px solid rgba(107, 47, 187, 0.2) !important;
+}
+
+.dialog-item:hover, .chat-item:hover {
+    background: rgba(107, 47, 187, 0.15) !important;
+}
+
+.dialog-item.active, .chat-item.selected {
+    background: rgba(107, 47, 187, 0.25) !important;
+    border-left: 3px solid var(--tg-purple) !important;
+}
+
+.message-item.outgoing .message-bubble {
+    background: linear-gradient(135deg, var(--tg-purple) 0%, var(--tg-purple-dark) 100%) !important;
+    color: white !important;
+    border-radius: 18px 18px 4px 18px !important;
+    box-shadow: 0 2px 8px rgba(107, 47, 187, 0.3) !important;
+}
+
+.message-item.incoming .message-bubble {
+    background: var(--tg-black-3) !important;
+    color: var(--tg-text) !important;
+    border-radius: 18px 18px 18px 4px !important;
+    border: 1px solid rgba(107, 47, 187, 0.3) !important;
+}
+
+.message-bubble {
+    padding: 8px 12px !important;
+    font-size: 14px !important;
+}
+
+.chat-input, .composer-input, .search-input {
+    background: var(--tg-black-3) !important;
+    border: 1px solid var(--tg-purple) !important;
+    color: var(--tg-text) !important;
+    border-radius: 24px !important;
+    padding: 10px 16px !important;
+}
+
+.chat-input:focus, .composer-input:focus {
+    outline: none !important;
+    border-color: var(--tg-purple-light) !important;
+    box-shadow: 0 0 0 2px rgba(107, 47, 187, 0.2) !important;
+}
+
+.send-btn, .attach-btn, .emoji-btn {
+    background: transparent !important;
+    color: var(--tg-purple-light) !important;
+}
+
+.send-btn:hover, .attach-btn:hover {
+    color: var(--tg-purple) !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px !important;
+    height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--tg-black-2) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tg-purple) !important;
+    border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--tg-purple-light) !important;
+}
+
+.btn-primary, .button-primary, .login-button {
+    background: linear-gradient(135deg, var(--tg-purple) 0%, var(--tg-purple-dark) 100%) !important;
+    border: none !important;
+    border-radius: 24px !important;
+    padding: 10px 20px !important;
+    color: white !important;
+    font-weight: bold !important;
+    transition: all 0.2s ease !important;
+}
+
+.btn-primary:hover, .button-primary:hover {
+    transform: scale(1.02) !important;
+    box-shadow: 0 4px 12px rgba(107, 47, 187, 0.4) !important;
+}
+
+a, .link {
+    color: var(--tg-purple-light) !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--tg-purple) !important;
+    text-decoration: underline !important;
+}
+
+h1, h2, h3, .title, .dialog-title, .chat-name {
+    color: var(--tg-text) !important;
+}
+
+.time, .date, .message-status {
+    color: var(--tg-text-dim) !important;
+}
+
+.tab-active, .nav-item.active {
+    border-bottom: 2px solid var(--tg-purple) !important;
+    color: var(--tg-purple-light) !important;
+}
+
+.dropdown-menu, .context-menu {
+    background: var(--tg-black-2) !important;
+    border: 1px solid var(--tg-purple) !important;
+}
+
+.dropdown-item:hover {
+    background: rgba(107, 47, 187, 0.3) !important;
+}
